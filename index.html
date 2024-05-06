@@ -8,13 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Crie e compartilhe seu evento.</h1>
-        <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
-    </header>
-    <form action="">
-        aqui vem o formulario
-    </form>
-    
+    <div class="page">
+        <header>
+            <h1>Crie e compartilhe seu evento.</h1>
+            <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+        </header>
+        <form>
+            
+            <fieldset>
+            <div class="fieldset-wrapper">
+
+                <legend>Informações do Evento</legend>
+
+                <div class="input-wrapper">
+                    <label for="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
+                    <input type="text" id="event-title" />
+                </div>    
+
+                <div class="input-wrapper">
+                    <label for="event-link">Link do evento<span>(comece com https://)</span></label>
+                    <input type="text" id="event-link" />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-whatsapp">Whatsapp para contato<span>(somente números)</span></label>
+                    <input type="text" id="event-whatsapp" />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-extras">Informações extras</label>
+                    <input type="text" id="event-extras" />
+                </div>
+
+            </div>
+            </fieldset>
+
+        </form>
+    </div> 
 </body>
 </html>
