@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rocket Form</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
             <h1>Crie e compartilhe seu evento.</h1>
             <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
         </header>
-        <form>
+        <form id="my-form">
             
             <fieldset>
             <div class="fieldset-wrapper">
@@ -22,7 +22,11 @@
 
                 <div class="input-wrapper">
                     <label for="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
-                    <input type="text" id="event-title" />
+                    <input 
+                        type="text" 
+                        id="event-title"
+                        required
+                        minlength="8" />
                 </div>    
 
                 <div class="input-wrapper">
@@ -64,7 +68,11 @@
 
                     <div class="input-wrapper">
                         <label for="event-password">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
-                        <input type="password" id="event-password" />
+                        <input 
+                            type="password" 
+                            id="event-password"
+                            required
+                            minlength="8" />
                     </div>  
                     
                     <div class="checkbox-wrapper">
@@ -99,7 +107,11 @@
         </form>
 
         <footer>
-            <input class="button" type="submit" value="Salvar evento">
+            <input 
+                class="button" 
+                type="submit"
+                form="my-form" 
+                value="Salvar evento">
         </footer>
 
     </div> 

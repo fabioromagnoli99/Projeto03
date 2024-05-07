@@ -226,3 +226,7 @@ fieldset legend {
   footer .button:hover {
     background: #11914b;
   }
+
+  input:invalid {
+    border: 2px solid red;
+  }
